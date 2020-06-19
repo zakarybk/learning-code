@@ -17,7 +17,6 @@ class Sandwich(ABC):
    
     def __init__(self):
         self.ingredients = self.CreateIngredients()
-        super().__init__() # Not called
 
     @abstractmethod
     def CreateIngredients(self):
@@ -25,19 +24,18 @@ class Sandwich(ABC):
 
 
 class TurkeySandwich(Sandwich):
-    def __init__(self):
-        super().__init__() # Not called
 
     def CreateIngredients(self):
-        self.ingredients = []
-        self.ingredients.append(Bread())
-        self.ingredients.append(Mayonnaise())
-        self.ingredients.append(Lettuce())
-        self.ingredients.append(Turkey())
-        self.ingredients.append(Turkey())
-        self.ingredients.append(Bread())
-        return len(self.ingredients)
+        ingredients = []
+        ingredients.append(Bread())
+        ingredients.append(Mayonnaise())
+        ingredients.append(Lettuce())
+        ingredients.append(Turkey())
+        ingredients.append(Turkey())
+        ingredients.append(Bread())
+        return ingredients
 
-turkeySandwich = TurkeySandwich().CreateIngredients()
-num = turkeySandwich
+turkeySandwich = TurkeySandwich()
+num = len(turkeySandwich.ingredients)
 print(f"This sandwich has {num} ingredients!")
+
