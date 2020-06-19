@@ -14,6 +14,7 @@ set undodir=~/.vim/undodir
 set undofile
 set incsearch
 set colorcolumn=80
+set encoding=utf-8
 highlight ColorCoilumn ctermbg=0 guibg=lightgrey
 
 call plug#begin('~/.vim/plugged')
