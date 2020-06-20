@@ -1,14 +1,14 @@
 import React from "react"
-import { StyleSheet, Text, View } from "react-native"
+import { StyleSheet, Text, View, Image, Dimensions } from "react-native"
 
 import picMountain from "./assets/gray-asphalt-road-on-cliff.jpg"
+import picCave from "./assets/abstract-antelope-canyon-art-blur.jpg"
 
 export default function App(){
   return(
     <View style={styles.page}>
-      <Text style={[styles.text, styles.selectedText]}>Red</Text>
-      <Text style={styles.text}>Green</Text>
-      <Text style={styles.text}>Blue</Text>
+      <Image style={styles.image} source={picMountain} />
+      <Image style={styles.image} source={picCave} />
     </View>
   )
 } 
@@ -16,23 +16,13 @@ export default function App(){
 const styles = StyleSheet.create({
   page: {
     flex: 1,
-    flexDirection: "column",
-    justifyContent: "space-around",
-    alignItems: "flex-start",
-    marginTop: 40,
-    backgroundColor: "#DDD"
+    justifyContent: "center",
+    alignItems: "center",
   },
-  text: {
-    textAlign: "center",
-    fontSize: 22,
-    color: "red",
-    backgroundColor: "yellow",
+  image: {
+    flex: 1,
+    borderRadius: 50,
     margin: 10,
-    padding: 5
+    width: Dimensions.get("window").width - 10
   },
-  selectedText: {
-    alignSelf: "flex-end",
-    backgroundColor: "red",
-    color: "yellow"
-  }
 })
