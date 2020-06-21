@@ -34,7 +34,7 @@ class MeatDatabase:
             calories = 38
         return calories        
 
-    def GetProteinPerOunce(meat: str):
+    def GetProteinPerOunce(self, meat: str):
         meat = meat.lower()
         protein = 0
         if meat == "beef":
@@ -46,5 +46,60 @@ class MeatDatabase:
         elif meat == "turkey":
             protein = 8.5
         return protein
+
+# New code below, old (legacy) above
+class Meat:
+
+    def __init__(self, meat: str):
+        self.meatName = meat
+
+        self.safeCookTempFahrenheit = None
+        self.safeCookTempCelsius = None
+        self.caloriesPerOunce = None
+        self.proteinPerOunce = None
+        
+    def LoadData(self):
+        print(f"Meat: {self.meatName}")
+
+class MeatDetails(Meat):
+
+    def __init__(self, name):
+        super().__init__(name)
+
+    def LoadData(self):
+        meatDatabase = MeatDatabase()
+
+        self.safeCookTempFahrenheit = meatDatabase.GetSafeCookTemp(
+            self.meatName,
+            TemperatureType.Fahrenheit
+        )
+        self.safeCookTempCelsius = meatDatabase.GetSafeCookTemp(
+            self.meatName,
+            TemperatureType.Celsius
+        )
+        self.caloriesPerOunce = meatDatabase.GetCaloriesPerOunce(self.meatName)
+        self.proteinPerOunce = meatDatabase.GetProteinPerOunce(self.meatName)
+
+        super().LoadData()
+        print(f"Safe Cook Temp (F): {self.safeCookTempFahrenheit}")
+        print(f"Safe Cook Temp (C): {self.safeCookTempCelsius}")
+        print(f"Calories per Ounce: {self.caloriesPerOunce}")
+        print(f"Protein per Ounce: {self.proteinPerOunce}")
+
+unknown = Meat("Beef")
+unknown.LoadData()
+print("---")
+
+beef = MeatDetails("Beef")
+beef.LoadData()
+print("---")
+
+turkey = MeatDetails("Turkey")
+turkey.LoadData()
+print("---")
+
+chicken = MeatDetails("Chicken")
+chicken.LoadData()
+
 
             
