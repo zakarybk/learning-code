@@ -4,18 +4,28 @@ import { StyleSheet, Text, View, TouchableHighlight } from "react-native"
 import picMountain from "./assets/gray-asphalt-road-on-cliff.jpg"
 import picCave from "./assets/abstract-antelope-canyon-art-blur.jpg"
 
+function ColorButton({ backgroundColor, onPress=f=>f }) { // =f=>f dumby function
+  return (
+    <TouchableHighlight style={styles.button}
+      onPress={() => onPress(backgroundColor)}
+      underlayColor="orange"
+    >
+      <View style={styles.row}>
+        <View style={[styles.sample, { backgroundColor }]} />
+        <Text style={styles.buttonText}>{backgroundColor}</Text>
+      </View>
+    </TouchableHighlight>
+  )
+}
+
 export default function App(){
   const [backgroundColor, setBackgroundColor] = useState("blue");
   return(
     <View style={[styles.container, { backgroundColor }]}>
-      <TouchableHighlight style={styles.button}
-        onPress={() => setBackgroundColor("yellow")}
-        underlayColor="orange">
-        <View style={styles.row}>
-          <View style={[styles.sample, { backgroundColor: "yellow" }]} />
-          <Text style={styles.buttonText}>yellow</Text>
-        </View>
-      </TouchableHighlight>
+      <ColorButton backgroundColor="red" onPress={setBackgroundColor} />
+      <ColorButton backgroundColor="blue" onPress={setBackgroundColor}/>
+      <ColorButton backgroundColor="green" onPress={setBackgroundColor}/>
+      <ColorButton backgroundColor="purple" onPress={setBackgroundColor}/>
     </View>
   )
 } 
