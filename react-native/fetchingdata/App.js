@@ -1,25 +1,40 @@
 import React, { useState, useEffect } from 'react';
-import { Text, SafeAreaView, ScrollView, StyleSheet, Image } from 'react-native';
+import { 
+  Text, 
+  SafeAreaView, 
+  ScrollView, 
+  StyleSheet, 
+  Image, 
+  ActivityIndicator, 
+  RefreshControl 
+} from 'react-native';
 import Constants from 'expo-constants';
 
 export default function App() {
+  const [loading, setLoading] = useState(false);
   const [pet, setPet] = useState();
 
   const loadPet = async () => {
+    setLoading(true);
     const res = await fetch("http://pet-library.moonhighway.com/api/randomPet");
     const data = await res.json();
+    await Image.prefetch(data.photo.full); // wait until image fully loaded
     setPet(data);
+    setLoading(false);
   }
 
   useEffect(() => {
     loadPet();
   }, []);
 
-  if (!pet) return null; // null = no render
+  if (!pet) return <ActivityIndicator size="large"/>; // null = no render
 
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView>
+      <ScrollView
+        refreshControl={
+          <RefreshControl refreshing={loading} onRefresh={loadPet} />
+        }>
         <Image style={styles.pic} source={{ uri:pet.photo.full }} />
         <Text style={styles.paragraph}>{pet.name} - {pet.category}</Text>
       </ScrollView>
