@@ -1,0 +1,11 @@
+/home/zak/Documents/learning/learning-code/designpatterns/22daily/iterator/obj/Debug/netcoreapp3.1/iterator.csprojAssemblyReference.cache
+/home/zak/Documents/learning/learning-code/designpatterns/22daily/iterator/obj/Debug/netcoreapp3.1/iterator.AssemblyInfoInputs.cache
+/home/zak/Documents/learning/learning-code/designpatterns/22daily/iterator/obj/Debug/netcoreapp3.1/iterator.AssemblyInfo.cs
+/home/zak/Documents/learning/learning-code/designpatterns/22daily/iterator/bin/Debug/netcoreapp3.1/iterator
+/home/zak/Documents/learning/learning-code/designpatterns/22daily/iterator/bin/Debug/netcoreapp3.1/iterator.deps.json
+/home/zak/Documents/learning/learning-code/designpatterns/22daily/iterator/bin/Debug/netcoreapp3.1/iterator.runtimeconfig.json
+/home/zak/Documents/learning/learning-code/designpatterns/22daily/iterator/bin/Debug/netcoreapp3.1/iterator.runtimeconfig.dev.json
+/home/zak/Documents/learning/learning-code/designpatterns/22daily/iterator/bin/Debug/netcoreapp3.1/iterator.dll
+/home/zak/Documents/learning/learning-code/designpatterns/22daily/iterator/bin/Debug/netcoreapp3.1/iterator.pdb
+/home/zak/Documents/learning/learning-code/designpatterns/22daily/iterator/obj/Debug/netcoreapp3.1/iterator.dll
+/home/zak/Documents/learning/learning-code/designpatterns/22daily/iterator/obj/Debug/netcoreapp3.1/iterator.pdb
