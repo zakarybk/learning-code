@@ -1,0 +1,11 @@
+/home/zak/Documents/learning/learning-code/designpatterns/22daily/observer/bin/Debug/netcoreapp3.1/observer
+/home/zak/Documents/learning/learning-code/designpatterns/22daily/observer/bin/Debug/netcoreapp3.1/observer.deps.json
+/home/zak/Documents/learning/learning-code/designpatterns/22daily/observer/bin/Debug/netcoreapp3.1/observer.runtimeconfig.json
+/home/zak/Documents/learning/learning-code/designpatterns/22daily/observer/bin/Debug/netcoreapp3.1/observer.runtimeconfig.dev.json
+/home/zak/Documents/learning/learning-code/designpatterns/22daily/observer/bin/Debug/netcoreapp3.1/observer.dll
+/home/zak/Documents/learning/learning-code/designpatterns/22daily/observer/bin/Debug/netcoreapp3.1/observer.pdb
+/home/zak/Documents/learning/learning-code/designpatterns/22daily/observer/obj/Debug/netcoreapp3.1/observer.csprojAssemblyReference.cache
+/home/zak/Documents/learning/learning-code/designpatterns/22daily/observer/obj/Debug/netcoreapp3.1/observer.AssemblyInfoInputs.cache
+/home/zak/Documents/learning/learning-code/designpatterns/22daily/observer/obj/Debug/netcoreapp3.1/observer.AssemblyInfo.cs
+/home/zak/Documents/learning/learning-code/designpatterns/22daily/observer/obj/Debug/netcoreapp3.1/observer.dll
+/home/zak/Documents/learning/learning-code/designpatterns/22daily/observer/obj/Debug/netcoreapp3.1/observer.pdb
