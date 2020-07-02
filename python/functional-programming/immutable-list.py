@@ -10,8 +10,11 @@ Scientist = collections.namedtuple('Scientist', [
 
 scientists = (
     Scientist(name='Ada Lovelace', field='math', born=1815, nobel=False),
-    Scientist(name='Emmy Noether', field='math', born=1882, nobel=False)
+    Scientist(name='Emmy Noether', field='math', born=1882, nobel=False),
+    Scientist(name='Marie Curi', field='physics', born=1867, nobel=True)
 )    
 print(scientists)
 
+fs = filter(lambda s: s.nobel is True, scientists)
+print(next(fs))
 
