@@ -66,3 +66,7 @@
 
 (defun inventory ()
   (cons 'items- (objects-at 'body *objects* *object-locations*)))
+
+(defun game-repl ()
+	(loop (print (eval (read)))))
+(game-repl)
