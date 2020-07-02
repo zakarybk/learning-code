@@ -8,10 +8,10 @@ Scientist = collections.namedtuple('Scientist', [
     'nobel'
 ])
 
-scientists = [
+scientists = (
     Scientist(name='Ada Lovelace', field='math', born=1815, nobel=False),
     Scientist(name='Emmy Noether', field='math', born=1882, nobel=False)
-]    
+)    
 print(scientists)
 
 
