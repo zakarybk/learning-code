@@ -18,3 +18,12 @@ print(scientists)
 fs = filter(lambda s: s.nobel is True, scientists)
 print(next(fs))
 
+print(tuple(filter(lambda s: s.nobel is True, scientists)))
+
+def nobel_filter(x):
+    return x.nobel is True
+
+print(tuple(filter(nobel_filter, scientists)))
+
+# Creates a generator 
+pprint(tuple(x for x in scientists if x.nobel is True))
