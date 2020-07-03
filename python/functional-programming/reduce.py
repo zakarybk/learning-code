@@ -40,3 +40,11 @@ scientists_by_field = reduce(
         )
 
 pprint(scientists_by_field)
+
+scientists_by_field2 = reduce(
+        reducer,
+        scientists,
+        collections.defaultdict(list)
+        )
+
+pprint(scientists_by_field2)
