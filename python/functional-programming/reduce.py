@@ -1,4 +1,6 @@
 import collections
+import itertools
+import functools
 from functools import reduce
 from pprint import pprint
 
@@ -48,3 +50,17 @@ scientists_by_field2 = reduce(
         )
 
 pprint(scientists_by_field2)
+
+scientists_by_field3 = {
+        item[0]: list(item[1])
+        for item in itertools.groupby(scientists, lambda x: x.field)
+        }
+pprint(scientists_by_field3)
+
+scientists_by_field4 = functools.reduce(
+        lambda acc, val: {**acc, **{val.field: acc[val.field] + [val.name]}},
+        scientists,
+        {'math': [], 'physics': [], 'chemistry': [], 'astronomy': []}
+        )
+
+pprint(scientists_by_field4)
