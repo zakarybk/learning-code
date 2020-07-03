@@ -18,5 +18,6 @@ def filter_name_and_age(x):
     return {'name': x.name, 'age': 2020 - x.born}
 
 names_and_ages = tuple(map(filter_name_and_age, scientists))
-print(names_and_ages)
+pprint(names_and_ages)
 
+pprint(tuple({'name': x.name, 'age': 2020 - x.born} for x in scientists))
