@@ -28,3 +28,15 @@ total_age = reduce(
 print(total_age)
 
 print(sum(x['age'] for x in names_and_ages))
+
+def reducer(acc, val):
+    acc[val.field].append(val.name)
+    return acc
+
+scientists_by_field = reduce(
+        reducer,
+        scientists,
+        {'math': [], 'physics': [], 'chemistry': [], 'astronomy': []}
+        )
+
+pprint(scientists_by_field)
