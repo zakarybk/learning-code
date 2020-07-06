@@ -1,5 +1,6 @@
 import collections
 import time
+import os
 from pprint import pprint
 from multiprocessing import Pool
 
@@ -25,15 +26,15 @@ print()
 
 
 def transform(x):
-    print(f"Processing record {x.name}")
+    print(f"Processing {os.getpid()} record {x.name}")
     time.sleep(1)
     result = {'name': x.name, 'age': 2020 - x.born}
-    print(f"Done processing record {x.name}")
+    print(f"Process {os.getpid()} done processing record {x.name}")
     return result
 
 start = time.time()
 
-pool = Pool()
+pool = Pool(processes=4, maxtasksperchild=1) # optional, none = all cores
 result = pool.map(transform, scientists)
 #result = tuple(map(
 #    transform,
