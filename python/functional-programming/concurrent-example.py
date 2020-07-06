@@ -33,8 +33,10 @@ def transform(x):
     return result
 
 start = time.time()
-
-with concurrent.futures.ProcessPoolExecutor() as executor:
+# ThreadPoolExecutor = single process, lots of threads
+# No two threads can execute python at the same time (global interpreter lock) 
+# Global interpreter lock not a problem with processpoolexecutor
+with concurrent.futures.ProcessPoolExecutor() as executor: # Or ProcessPoolExecutor or ThreadPoolExecutor
     result = executor.map(transform, scientists)
 
 end = time.time()
