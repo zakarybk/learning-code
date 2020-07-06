@@ -1,6 +1,7 @@
 import collections
 import time
 from pprint import pprint
+from multiprocessing import Pool
 
 Scientist = collections.namedtuple('Scientist', [
     'name',
@@ -30,10 +31,17 @@ def transform(x):
     print(f"Done processing record {x.name}")
     return result
 
-result = tuple(map(
-    transform,
-    scientists
-    ))
+start = time.time()
 
+pool = Pool()
+result = pool.map(transform, scientists)
+#result = tuple(map(
+#    transform,
+#    scientists
+#    ))
+
+end = time.time()
+
+print(f"\nTime to complete: {end - start:.2f}s\n")
 print()
 pprint(result)
