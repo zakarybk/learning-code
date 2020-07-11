@@ -26,7 +26,7 @@ namespace visitor
             PaidTimeOffDays = paidTimeOffDays;
         }
 
-        public override void Accept(IVisitor visitor)(IVisitor visitor)
+        public override void Accept(IVisitor visitor)
         {
             visitor.Visit(this);
         }
@@ -78,7 +78,7 @@ namespace visitor
 
     /// The object Structure class, which is a collection of Concrete Elements.
     /// This could be implemented using another pattern such as Composite.
-    class Employee
+    class Employees
     {
         private List<Employee> employees = new List<Employee>();
 
@@ -102,6 +102,16 @@ namespace visitor
 
     class LineCook : Employee
     {
-        public LineCook() : base("Dmitri", )
+        public LineCook() : base("Dmitri", 32000, 7) {}
+    }
+
+    class HeadChef : Employee
+    {
+        public HeadChef() : base("Jackson", 69015, 21) {}
+    }
+
+    class GeneralManager : Employee
+    {
+        public GeneralManager() : base("Amanda", 78000, 24) {}
     }
 }
