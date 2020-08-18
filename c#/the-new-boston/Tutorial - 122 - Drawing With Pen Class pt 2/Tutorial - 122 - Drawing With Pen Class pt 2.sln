@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial - 122 - Drawing With Pen Class pt 2", "Tutorial - 122 - Drawing With Pen Class pt 2\Tutorial - 122 - Drawing With Pen Class pt 2.csproj", "{1091990C-4658-4DC1-8895-1D2719436695}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1091990C-4658-4DC1-8895-1D2719436695}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1091990C-4658-4DC1-8895-1D2719436695}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1091990C-4658-4DC1-8895-1D2719436695}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1091990C-4658-4DC1-8895-1D2719436695}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

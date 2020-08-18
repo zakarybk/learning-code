@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial - 126 - PathGradientBrush pt 1", "Tutorial - 126 - PathGradientBrush pt 1\Tutorial - 126 - PathGradientBrush pt 1.csproj", "{C97E45F3-3925-4BAB-964C-88F2B3EE8447}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C97E45F3-3925-4BAB-964C-88F2B3EE8447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C97E45F3-3925-4BAB-964C-88F2B3EE8447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C97E45F3-3925-4BAB-964C-88F2B3EE8447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C97E45F3-3925-4BAB-964C-88F2B3EE8447}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

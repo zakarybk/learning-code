@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial - 15 - Try, Catch and Finally", "Tutorial - 15 - Try, Catch and Finally\Tutorial - 15 - Try, Catch and Finally.csproj", "{3A2B0DB7-B430-470B-9EB7-DB611F6552B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A2B0DB7-B430-470B-9EB7-DB611F6552B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A2B0DB7-B430-470B-9EB7-DB611F6552B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A2B0DB7-B430-470B-9EB7-DB611F6552B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A2B0DB7-B430-470B-9EB7-DB611F6552B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
