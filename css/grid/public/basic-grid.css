@@ -1,0 +1,17 @@
+.basic-grid {
+    display: grid;
+    gap: 1rem;
+
+    /* grid-template-columns: 1fr; /* one fractional unit */
+
+    /* fill page with columns */
+    grid-template-columns: repeat(12, 1fr);
+
+    /* min width for columns - but overflows */
+    grid-template-columns: repeat(12, minmax(240px, 1fr));
+
+    /* same as above but wraps around to fit page */
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+    /* auto-fit - stretch colums | auto-fill - adds in blanks */
+}
